@@ -254,54 +254,16 @@
 
   <div class="section" id="contact">
     <h3>Contact</h3>
-    <p>Have questions, media requests, or just want to say hello? Reach out here.</p>
-    <form id="contactForm" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your name" required /><br /><br />
-      <input type="email" name="email" placeholder="Your email" required /><br /><br />
-      <input type="text" name="subject" placeholder="Subject" required /><br /><br />
-      <textarea name="message" placeholder="Your message" rows="5" required></textarea><br /><br />
-      <button type="submit">Send Message</button>
-    </form>
+    <p>Have questions, media requests, or just want to say hello? Reach out through email at: author@farley.ink</p>
+    
   </div>
-
-  <!-- Confirmation message -->
-  <div id="confirmationMessage">Thank you for your communication, your message was successfully sent!</div>
 
   <footer>
     <p>&copy; Farley.Ink is a subsidiary of Farley Enterprises, LLC - All Rights Reserved 2025</p>
   </footer>
 
-  <script>
-    const form = document.getElementById('contactForm');
-    const messageDiv = document.getElementById('confirmationMessage');
-
-    form.addEventListener('submit', function(event) {
-      // Get the subject value
-      const subjectInput = form.querySelector('input[name="subject"]');
-      const subject = encodeURIComponent(subjectInput.value);
-
-      // Set mailto with subject
-      form.action = `mailto:author@farley.ink?subject=${subject}`;
-
-      // Show confirmation message with fade in
-      messageDiv.style.display = 'block';
-      setTimeout(() => {
-        messageDiv.style.opacity = '1';
-      }, 10);
-
-      // Hide message after 3 seconds with fade out
-      setTimeout(() => {
-        messageDiv.style.opacity = '0';
-      }, 3000);
-
-      setTimeout(() => {
-        messageDiv.style.display = 'none';
-      }, 3800);
-
-      // Form submission proceeds (opens mail client)
-    });
-  </script>
 </body>
 </html>
+
 
 
