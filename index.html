@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Farley.Ink - Michael Adam Farley</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -100,6 +100,48 @@
       margin: 10px auto;
       text-align: center;
     }
+    /* Confirmation message styles */
+    #confirmationMessage {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: transparent;
+      color: #2e7d32; /* Dark green */
+      font-weight: bold;
+      font-size: 1.5em;
+      padding: 15px 30px;
+      border-radius: 8px;
+      opacity: 0;
+      display: none;
+      pointer-events: none;
+      transition: opacity 0.5s ease-in-out;
+      z-index: 10000;
+      text-align: center;
+    }
+    /* Inputs full width */
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background-color: #1a1a2e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #111126;
+    }
   </style>
 </head>
 <body>
@@ -123,7 +165,7 @@
   </div>
 
   <div class="section" id="about">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigLSWa_hWfHQQ9GHe_zGMr6zrI1z_MEOAZkHugnteTLWOXFS1Ck9otNxiRupST1U6QK5BhcqwGv7xG4gTifHsWcoCHL8jUaPyDNwMljQPkAOJ101EUaYzNskrUGvEQfQgdZItap280hFOo5xxkkV1YMMf0rhGkPaeZQbD99s4vHyTTJ_1za1-lBucK2Fs/s3504/DSC09894%20(1).JPG" alt="Michael Adam Farley portrait" style="display: block; margin: 0 auto 30px auto; max-width: 100%; width: 500px; height: auto; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigLSWa_hWfHQQ9GHe_zGMr6zrI1z_MEOAZkHugnteTLWOXFS1Ck9otNxiRupST1U6QK5BhcqwGv7xG4gTifHsWcoCHL8jUaPyDNwMljQPkAOJ101EUaYzNskrUGvEQfQgdZItap280hFOo5xxkkV1YMMf0rhGkPaeZQbD99s4vHyTTJ_1za1-lBucK2Fs/s3504/DSC09894%20(1).JPG" alt="Michael Adam Farley portrait" style="display: block; margin: 0 auto 30px auto; max-width: 100%; width: 500px; height: auto; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);" />
     <h3>About the Author</h3>
     <p>Michael Adam Farley was born in California, raised on a Colorado mountainside, and came of age after his family moved to Tennessee. After becoming an adult, he moved just north of the Tennessee border and settled down in a little Kentucky town named Guthrie (just down the road from the home of America's first poet laureate, Robert Penn Warren). His life, being more colorful than this alone, created a patchwork of landscapes and cultures which left their imprint on his storytelling: bold, unconfined, and deeply human.</p>
     <p>He doesn't write by genre, rather, he writes by spark. One story might follow a lawyer fighting a broken system, another, a cowboy recovering from a life-altering injury, and another still, a Deaf Cherokee woman who can see and hear the dead. His works are filled with heart, wit, and the kind of emotional depth that lives on long after the last page is past. Whether it’s dragons, aliens, or a student body fighting for their identity and voice, Adam’s characters are always wrestling with real questions, and as part, so are his readers.</p>
@@ -138,19 +180,19 @@
     <p>Explore the stories currently being developed. Get a sneak peek into the process and inspiration behind each work.</p>
     <div class="story-grid" style="grid-template-columns: repeat(3, 1fr);">
       <div class="story">
-        <img src="https://i.postimg.cc/LhyZvpmg/beautiful-injustice.jpg" alt="A Beautiful Injustice" style="display: block; margin: 0 auto 10px auto;">
+        <img src="https://i.postimg.cc/LhyZvpmg/beautiful-injustice.jpg" alt="A Beautiful Injustice" style="display: block; margin: 0 auto 10px auto;" />
         <h4>A Beautiful Injustice</h4>
         <p>During the Syrian Civil War, Nadia's dreams and world were shattered, within her heart was pain and distain. Reluctantly, yet with little choice, she fled to the United States with nothing but the memory of the life she lost behind. Without a once-promising professional dream, she found herself starting over in a place where her credentials didn’t exist, her past was invisible. Determined to keep the spirit of her profession alive, Nadia pursued a new path, one that gave her hope, until the system decided she was outside their perimeters. Accused of crossing legal lines, she was dragged into a courtroom where the rules were unfamiliar and justice seemed more like a puzzle than a promise.</p>
         <p>A Beautiful Injustice is a powerful story about survival, identity, and resilience. As Nadia stands alone in the wake of what some might call a witch hunt, in a foreign land, one lawyer, perhaps familiar from his seeming luck now stands with her to defend, not only her career, but her very right to belong. Her story explores the quiet strength it takes to start all over again, the courage to face judgment which feels like persecution in a new world, and the grace to fight with dignity, even when everything is on the line.</p>
       </div>
       <div class="story">
-        <img src="https://i.postimg.cc/LnW46DTb/freemans-last-ride.jpg" alt="Freeman's Last Ride" style="display: block; margin: 0 auto 10px auto;">
+        <img src="https://i.postimg.cc/LnW46DTb/freemans-last-ride.jpg" alt="Freeman's Last Ride" style="display: block; margin: 0 auto 10px auto;" />
         <h4>Freeman's Last Ride</h4>
         <p><em>Freeman’s Last Ride</em> is a powerfully emotional contemporary Western about love, legacy, and the cost of resilience. Beauregard “Bo” Freeman, a seasoned Black rodeo cowboy, has spent years fighting for his place in a world that often overlooks men like him. When a brutal accident threatens not only his career but his future, the only person standing between him and complete ruin is Dixie Li, a dazzling rodeo queen, sharpshooter, and a woman with a past of broken family ties, much like him. Their connection is deep, moving, and transcends the unlikely backgrounds they each ran from before the rodeo saved them.</p>
         <p>As Bo recovers with the help of Dixie's estranged father, a relentless acupuncturist with no love for cowboys. Bo is forced to confront his past, his pride, and change his path after learning of a coming unexpected surprise. But when the rodeo commission and workers' comp system turn their backs on him, Bo realizes the fight isn’t over. Bo must saddle up for the biggest ride of his life, one that won’t take place in the arena, but in a legal conflict, with a young, unlikely lawyer by his side.</p>
       </div>
       <div class="story">
-        <img src="https://postimg.cc/w1pPVHdv.jpg" alt="Listen!: The Untold Story" style="display: block; margin: 0 auto 10px auto;">
+        <img src="https://i.postimg.cc/w1pPVHdv" alt="Listen!: The Untold Story" style="display: block; margin: 0 auto 10px auto;" />
         <h4>Listen!: The Untold Story</h4>
         <p>A prestigious university in D.C., known for its rich Deaf community is thrown into crisis when the national interpreter registry collapses and AI captioning is rushed in as a “temporary solution.” With the appointment of a "hard-of-hearing" president who doesn't know sign sparking outrage across campus. For students like Kezi, a generational CODA; Drea, a bi-modal wearing audiology major; Donte, a Deaf athlete with NFL dreams; Harper, a future lawyer; and Malika, a historian of Deaf culture, the future feels uncertain and the stakes couldn’t be higher.</p>
         <p>Determined to fight back, these students refuse to be reduced to passive observers in their education and community or reliant on technology that erases their language and voices. They demand leadership that understands their culture and visual way of communicating, and access that honors their identity. Their struggle becomes a powerful call to be truly seen, heard, and find empowerment within an institution they have long revered and call home.</p>
@@ -169,7 +211,7 @@
     <p>Read chapter-by-chapter fanfiction and original works. Discover new characters, revisit old favorites, and explore a world of imagination—all free.</p>
     <div class="story-grid">
       <div class="story">
-        <img src="https://i.postimg.cc/jnq0ZYSj/acupuncturist.jpg" alt="The Acupuncturist" style="display: block; margin: 0 auto 10px auto;">
+        <img src="https://i.postimg.cc/jnq0ZYSj/acupuncturist.jpg" alt="The Acupuncturist" style="display: block; margin: 0 auto 10px auto;" />
         <h4>The Acupuncturist</h4>
         <p>A man, once renowned throughout Tennessee for his ability to heal those around him, after tragedy strikes, runs away to Florida, but finds that he is unable to heal himself.</p>
         <p>Dr. Jianhao Li fights a battle not seen. While he treats his patients and looks for meaning, he himself is stuck on the death of his late wife. He finds himself on an endless loop year after year. Until something unexpected happens. Something unwelcome comes into his life, accompanied by shocking news which becomes a turning point for Dr. Li. This experience offers a grounding reset for the acupuncturist. And he again finds his footing in the world of health care, continuing to change lives, while finding his own.</p>
@@ -177,14 +219,14 @@
         <a href="http://stories.farley.ink/p/the-acupuncturist.html" class="button">Start Reading</a>
       </div>
       <div class="story">
-        <img src="https://i.postimg.cc/Z0ySq122/split-frequencies-new.jpg" alt="Split Frequencies: Resonance Restored" style="display: block; margin: 0 auto 10px auto;">
+        <img src="https://i.postimg.cc/Z0ySq122/split-frequencies-new.jpg" alt="Split Frequencies: Resonance Restored" style="display: block; margin: 0 auto 10px auto;" />
         <h4>Split Frequencies: Resonance Restored</h4>
         <p><em>Split Frequencies: Resonance Restored</em> is a deeply human story of twin sisters, identical in appearance but worlds apart in every other way, who are brought back together through the life-changing work they do for others. Rachel, a sculptor-turned-anaplastologist, and Michelle, a by-the-book audiologist, haven’t spoken in nearly a decade. Then, when one patient, unknowingly bridges the divide, their silence is suddenly broken. What started as a somewhat reluctant reconnection ends up growing into something greater: a shared journey of forgiveness, healing, and rediscovering harmony, not only within their fractured family, but within themselves.</p>
         <p>Set against the vibrant backdrop of Washington D.C. and the deafening shadows of their past, <em>Split Frequencies</em> explores the unspoken grief between sisters, the weight of parental expectation, and the quiet beauty of rebuilding what was once broken. Weaving in elements of Deaf culture, medical science and artistry, and the wisdom of a well-known acupuncturist, this emotional story brings to life secret messages hidden in referral letters, moments of personal reckoning, and the hard-won truth that expectations set too high can fracture the things that matter most. It’s a resonant, emotional read for anyone who’s longed to reconcile, to be seen, and to find their voice again.</p>
         <a href="http://stories.farley.ink/p/split-frequencies-resonance-restored.html" class="button">Start Reading</a>
       </div>
       <div class="story">
-        <img src="https://postimg.cc/N5FfjWSV.jpg" alt="Cross Your Q's and Jeannie Up!" style="display: block; margin: 0 auto 10px auto;">
+        <img src="https://i.postimg.cc/N5FfjWSV" alt="Cross Your Q's and Jeannie Up!" style="display: block; margin: 0 auto 10px auto;" />
         <h4>Cross Your Q's and Jeannie Up!</h4>
         <p><i>FanFic</i></p>
         <p>What happens when one man's wish to see how far humanity will go, takes a 1960's moon-bound space craft into the Delta Quadrant and the Federation Starship Voyager finds them?</p>
@@ -210,21 +252,54 @@
     <a href="#" class="button">Visit Store</a>
   </div>
 
-<div class="section" id="contact">
-  <h3>Contact</h3>
-  <p>Have questions, media requests, or just want to say hello? Reach out here.</p>
-  <form action="mailto:author@farley.ink" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your name" required /><br /><br />
-    <input type="email" name="email" placeholder="Your email" required /><br /><br />
-    <textarea name="message" placeholder="Your message" rows="5" required></textarea><br /><br />
-    <button type="submit">Send Message</button>
-  </form>
-</div>
-  
+  <div class="section" id="contact">
+    <h3>Contact</h3>
+    <p>Have questions, media requests, or just want to say hello? Reach out here.</p>
+    <form id="contactForm" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your name" required /><br /><br />
+      <input type="email" name="email" placeholder="Your email" required /><br /><br />
+      <input type="text" name="subject" placeholder="Subject" required /><br /><br />
+      <textarea name="message" placeholder="Your message" rows="5" required></textarea><br /><br />
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Confirmation message -->
+  <div id="confirmationMessage">Thank you for your communication, your message was successfully sent!</div>
+
   <footer>
     <p>&copy; 2025 Farley.Ink. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const messageDiv = document.getElementById('confirmationMessage');
+
+    form.addEventListener('submit', function(event) {
+      // Get the subject value
+      const subjectInput = form.querySelector('input[name="subject"]');
+      const subject = encodeURIComponent(subjectInput.value);
+
+      // Set mailto with subject
+      form.action = `mailto:author@farley.ink?subject=${subject}`;
+
+      // Show confirmation message with fade in
+      messageDiv.style.display = 'block';
+      setTimeout(() => {
+        messageDiv.style.opacity = '1';
+      }, 10);
+
+      // Hide message after 3 seconds with fade out
+      setTimeout(() => {
+        messageDiv.style.opacity = '0';
+      }, 3000);
+
+      setTimeout(() => {
+        messageDiv.style.display = 'none';
+      }, 3800);
+
+      // Form submission proceeds (opens mail client)
+    });
+  </script>
 </body>
-
 </html>
-
