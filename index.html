@@ -100,17 +100,21 @@
       margin: 10px auto;
       text-align: center;
     }
-
-    /* MOBILE OPTIMIZATION: STACK STORY CARDS VERTICALLY */
     @media (max-width: 768px) {
       .story-grid {
-        display: block; /* removes grid */
+        display: block; 
       }
       .story {
-        margin-bottom: 20px; /* space between stacked cards */
+        margin-bottom: 20px; 
         width: 100% !important;
         box-sizing: border-box;
       }
+    #works-in-progress .story img,
+    #stories .story img {
+      width: 200px;  
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
     }
   </style>
 </head>
@@ -234,5 +238,6 @@
   </footer>
 </body>
 </html>
+
 
 
