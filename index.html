@@ -148,21 +148,60 @@
     height: 1800px; /* Adjust so full form shows without awkward scroll */
   }
 }
+      /* Hamburger icon style */
+.hamburger {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #1a1a2e;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  nav a {
+    margin: 10px 0;
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav.show {
+    display: flex;
+  }
+}
     }
   </style>
-</head>
-<body>
   <header>
-    <h1>Farley.Ink</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#books">Books</a>
-      <a href="#stories">Free Stories</a>
-      <a href="#newsletter">Newsletter</a>
-      <a href="#contact">Contact</a>
-      <a href="#store">Store</a>
-    </nav>
-  </header>
+  <h1>Farley.Ink</h1>
+
+  <!-- Hamburger Button -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navMenu">
+    <a href="#about">About</a>
+    <a href="#books">Books</a>
+    <a href="#stories">Free Stories</a>
+    <a href="#newsletter">Newsletter</a>
+    <a href="#contact">Contact</a>
+    <a href="#store">Store</a>
+  </nav>
+</header>
 
   <div class="hero">
     <h2>Storytelling That Bridges Worlds</h2>
@@ -265,8 +304,14 @@
   <footer>
     <p>&copy; Farley.Ink is a subsidiary of Farley Enterprises, LLC - All Rights Reserved 2025</p>
   </footer>
+  <script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
 </body>
 </html>
+
 
 
 
